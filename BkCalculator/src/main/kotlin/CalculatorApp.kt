@@ -10,7 +10,7 @@ const val MULTIPLY = "*"
 const val DIVIDE = "/"
 const val REMINDER = "%"
 const val EXPONENT = "^"
-const val COMPUTE = "="
+
 var ERROR_MSG: String? = null
 
 val testArgOne = 3.5
@@ -20,7 +20,7 @@ val testArgwo = 4.0
 fun setErrorMsg(er: String) = ERROR_MSG ?: er ?: "An Error Occurred"
 
 //Display computed value
-fun displayComputedResult(result: String) = println("Result:: $result")
+//fun displayComputedResult(result: String) = println("Result:: $result")
 
 fun checkOperand(operand: String): Boolean {
     return when (operand) {
